@@ -1,0 +1,190 @@
+.profilePage {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2.5fr 30px;
+    grid-template-areas:
+        'user user user user'
+        'price price freeMin freeMin'
+        'profileDesc profileDesc profileDesc profileDesc'
+        'button button button button';
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.user {
+    grid-area: user;
+    color: white;
+    background-color: #222222;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .userImg {
+        height: 80%;
+        max-height: 150px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+    }
+    .userIntroduction {
+        font-weight: lighter;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        h2 {
+            letter-spacing: 1px;
+        }
+        h3 {
+            font-weight: 400;
+        }
+        a {
+            color: #b2b2b5;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.pricing {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem;
+    .iconBox {
+        padding: 5px;
+        background-color: #d9d9d9;
+        border-radius: 5px;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .dpActivated {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 60%;
+    }
+    h3 {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    a {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: flex-end;
+        color: #222222;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.charge {
+    grid-area: price;
+    h3,
+    h2 {
+        color: #006ce6;
+    }
+}
+
+.freeMin {
+    grid-area: freeMin;
+    h3 {
+        color: #46b485;
+    }
+}
+
+.profileDesc {
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    grid-area: profileDesc;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+        font-size: 1rem;
+    }
+    .infoRow {
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    a {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        color: #222222;
+    }
+}
+
+.activateDynamicPricingBtn {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    grid-area: button;
+    font-size: 1.1rem;
+}
+
+.activateDynamicPricingBtn:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+.dynamicPricingInfoWindow {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dynamicPricingInfoInnerWindow {
+        background-color: white;
+        color: #3d9c73;
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: justify;
+        padding: 2rem;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        .buttonBox {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: space-around;
+            width: 100%;
+            button {
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 5px;
+                background-color: #005eb7;
+                color: white;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.mainWithSignIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.signInLink {
+    color: #fff;
+    background-color: #222222;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.homePageMain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem;
+    position: relative;
+    // padding-bottom: 10vh;
+}
+
+.recommendedExpertsBox {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.25rem;
+}
+
+.signOutButton {
+    color: #fff;
+    background-color: #222222;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.expertBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: #222222;
+    border-radius: 10px;
+    padding: 0.5rem;
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    min-height: 350px;
+}
+
+.callCost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.toolTip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 10%;
+}
+
+.text {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}

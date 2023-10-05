@@ -1,0 +1,64 @@
+.signInPage {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow-y: hidden;
+}
+
+.expertsBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+
+.signInUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.signInUser:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.signInForm {
+    background-color: white;
+    padding: 2rem;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    label {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        input {
+            padding: 0.5rem;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 0.418);
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        button {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-weight: 500;
+            width: 50%;
+        }
+    }
+}

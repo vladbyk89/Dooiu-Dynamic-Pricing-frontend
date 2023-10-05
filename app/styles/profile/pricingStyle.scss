@@ -1,0 +1,138 @@
+.changePricePage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.priceOptions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    height: 40%;
+    .price {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .price:hover {
+        cursor: pointer;
+    }
+}
+
+.linkBox {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.dynamicPricingLink:hover {
+    text-decoration: underline;
+}
+
+.messageBox {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin: auto 0;
+}
+
+.popUpPriceEnter {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10000px rgba(0, 0, 0, 0.5);
+    height: 80%;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    .otherPriceLabel {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-weight: 500;
+        #otherPriceInput {
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+        }
+        b {
+            position: absolute;
+            bottom: 0.7rem;
+            left: 5px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    button {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+    .otherPriceContinueBtn {
+        border: none;
+        background-color: #d0d6dd;
+        color: white;
+        font-weight: 500;
+    }
+    .cancelBtn {
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .cancelBtn:hover {
+        background-color: #f3f3f3;
+    }
+}
+
+.confirmPriceWindow {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+        width: 100%;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.425);
+        background-color: white;
+        padding: 1rem;
+    }
+    .finalPrice {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .serviceFee {
+        position: relative;
+        .feeBreakDown {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            .feePercent {
+                color: #00c18a;
+                font-size: 2rem;
+            }
+        }
+    }
+    button {
+        width: 100%;
+        font-size: 1.4rem;
+        padding: .5rem 0 ;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
