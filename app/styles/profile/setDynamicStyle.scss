@@ -1,53 +1,62 @@
 .setDynamicPricePage {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.setMinPriceWindow {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .text {
-    text-align: center;
-    margin-top: 5vh;
+	text-align: center;
+	margin-top: 5vh;
 }
 
 .setMinPriceBox {
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 5px;
-    margin-top: 10vh;
-    gap: 1rem;
-    label {
-        position: relative;
-        width: 100%;
-        margin: 5vh;
-        b {
-            position: absolute;
-            bottom: 0.5rem;
-            left: 0.5rem;
-            color: rgba(0, 0, 0, 0.5);
-        }
-        input {
-            width: 100%;
-            padding: 0.5rem 1.5rem;
-            border: 1px solid rgba(0, 0, 0, 0.521);
-            border-radius: 5px;
-            outline: none;
-        }
-    }
-    button {
-        padding: 0.5rem 0;
-        width: 80%;
-        margin-bottom: 2vh;
-        border: 1px solid black;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1rem;
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 10px;
+	gap: 1rem;
+	label {
+		position: relative;
+		width: 100%;
+		margin: 5vh;
+		b {
+			position: absolute;
+			bottom: 0.5rem;
+			left: 0.5rem;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		input {
+			width: 100%;
+			padding: 0.5rem 1.5rem;
+			border: 1px solid rgba(0, 0, 0, 0.521);
+			border-radius: 5px;
+			outline: none;
+		}
+	}
+	button {
+		padding: 0.5rem 0;
+		width: 80%;
+		margin-bottom: 2vh;
+		border: 1px solid black;
+		border-radius: 5px;
+		cursor: pointer;
+	}
 }
